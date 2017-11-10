@@ -1,0 +1,9 @@
+<?php
+function messageFlash(){
+    if (isset($_SESSION["flash"])){
+
+        echo $_SESSION["flash"];
+        unset($_SESSION["flash"]);
+    }
+}
+?>
